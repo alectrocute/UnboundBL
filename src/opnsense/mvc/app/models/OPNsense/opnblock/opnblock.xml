@@ -1,0 +1,23 @@
+<model>
+    <mount>//OPNsense/opnblock</mount>
+    <version>0.1</version>
+    <description>Ad-blocker for Unbound DNS</description>
+    <items>
+        <!-- container -->
+        <general>
+            <!-- fields -->
+            <Enabled type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </Enabled>
+            <whitelist type="TextField">
+                <default>/(api.solvemedia.com)/</default>
+                <Required>N</Required>
+            </whitelist>
+            <blacklist type="TextField">
+                <default>https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt https://adaway.org/hosts.txt</default>
+                <Required>N</Required>
+            </blacklist>
+        </general>
+    </items>
+</model>
