@@ -16,6 +16,7 @@ OPNblock goes hand-in-hand with Unbound DNS to blackhole undesired content. By g
 - Preset blacklists for easy setup.
 - Advanced blacklist management.
 - Regex builder for whitelist.
+- Pixel server (NGINX) to replace 0.0.0.0.
 
 
 ### Installing
