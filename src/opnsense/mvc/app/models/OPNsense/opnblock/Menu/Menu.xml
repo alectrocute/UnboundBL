@@ -1,5 +1,5 @@
 <menu>
-  <Services>
-    <OPNBlock cssClass="fa fa-hand-paper-o" url="/ui/opnblock" />
-  </Services>
+    <Services>
+        <opnblock VisibleName="OPNBlock" url="/ui/opnblock" cssClass="fa fa-hand-paper-o">
+    </Services>
 </menu>
