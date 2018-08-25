@@ -1,7 +1,5 @@
 <menu>
-   <Services>
-      <OPNblock cssClass="fa fa-hand-paper-o fa-fw">
-         <Management url="/ui/opnblock"/>
-      </OPNblock>
-   </Services>
+  <Services>
+    <OPNBlock cssClass="fa fa-hand-paper-o" url="/ui/opnblock" />
+  </Services>
 </menu>
