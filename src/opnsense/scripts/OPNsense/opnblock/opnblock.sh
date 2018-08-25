@@ -1,9 +1,11 @@
 # !/bin/sh
-whitelist=$(awk -F '=' '{if (! ($0 ~ /^;/) && $0 ~ /whitelist/) print $2}'  /usr/local/etc/opnblock/opnblock.conf);
-blacklist=$(awk -F '=' '{if (! ($0 ~ /^;/) && $0 ~ /blacklist/) print $2}'  /usr/local/etc/opnblock/opnblock.conf);
 rm -r /tmp/hosts.working
 rm -r /var/unbound/opnblock.conf
 touch /tmp/hosts.working
+touch /var/unbound/opnblock.conf
+
+whitelist=$(awk -F '=' '{if (! ($0 ~ /^;/) && $0 ~ /whitelist/) print $2}'  /usr/local/etc/opnblock/opnblock.conf);
+blacklist=$(awk -F '=' '{if (! ($0 ~ /^;/) && $0 ~ /blacklist/) print $2}'  /usr/local/etc/opnblock/opnblock.conf);
 
 for url in $blacklist; do
 echo "Downloading: " $url
