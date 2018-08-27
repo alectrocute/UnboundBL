@@ -1,9 +1,9 @@
 <acl>
-   <page-services-opnblock>
-      <name>Services: OPNblock</name>
+   <page-lobby-opnblock>
+      <name>Lobby: OPNblock</name>
       <patterns>
          <pattern>ui/opnblock/*</pattern>
          <pattern>api/opnblock/*</pattern>
       </patterns>
-   </page-services-opnblock>
+   </page-lobby-opnblock>
 </acl>
