@@ -1,0 +1,7 @@
+<menu>
+     <Services>
+         <Unbound>
+             <UnboundBL VisibleName="DNSBL" url="/ui/UnboundBL" />
+         </Unbound>
+     </Services>
+</menu>
