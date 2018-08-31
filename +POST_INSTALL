@@ -1,2 +1,3 @@
 chmod 755 /usr/local/opnsense/scripts/OPNsense/UnboundBL/UnboundBL.sh
+touch /usr/local/opnsense/scripts/OPNsense/UnboundBL/data.sh
 chmod 755 /usr/local/opnsense/scripts/OPNsense/UnboundBL/data.sh
