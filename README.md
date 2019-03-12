@@ -7,7 +7,7 @@ UnboundBL goes hand-in-hand with Unbound DNS to blackhole undesired content. By 
 
 ### Current Features
 - Add, download and parse blocklist URLs.
-- Add unlimited whitelist entries in domain format (eg. www.malware-server.net) which will be ignored from any blocklist you parse.
+- Add unlimited whitelist entries in domain format (eg. `www.malware-server.net`) which will be ignored from any blocklist you parse.
 - One-click refresh and rebuild.
 
 ### Planned Features
