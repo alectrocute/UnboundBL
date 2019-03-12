@@ -1,14 +1,14 @@
 # UnboundBL 🛑
 Block ads, malware, tracking, mining + more on OPNsense with UnboundBL & Unbound DNS.
 
-![UnboundBL](https://i.imgur.com/xHLuwhL.png)
+![UnboundBL](https://i.imgur.com/zvKpPDk.png)
 
 UnboundBL goes hand-in-hand with Unbound DNS to blackhole undesired content. By generating a .conf file for Unbound in realtime, it allows you to easily submit, convert & manage blacklist URL's. It's not quite at the pfBlocker level, but it's getting there! 😅
 
 ### Current Features
-- Add unlimited host-file URLs, separated by a space.
-- Add unlimited whitelist regex, separated by a space.
-- Rebuild the Unbound DNS list by clicking on "Reload Lists".
+- Add, download and parse blocklist URLs.
+- Add unlimited whitelist entries in domain format (eg. www.malware-server.net) which will be ignored from any blocklist you parse.
+- One-click refresh and rebuild.
 
 ### Planned Features
 - Cron-job management.
@@ -16,7 +16,7 @@ UnboundBL goes hand-in-hand with Unbound DNS to blackhole undesired content. By 
 - Preset blacklists for easy setup.
 - Advanced blacklist management.
 - Regex builder for whitelist.
-- Pixel server (NGINX) to replace 0.0.0.0.
+- Pixelserv (NGINX) to replace 0.0.0.0.
 
 
 ### Installing
@@ -31,8 +31,8 @@ Obviously, this is all done with the `8) Shell` mode via SSH.
 ### Removing
 `8) Shell` mode via SSH, or web-based package manager, I suppose.
 
-`$ pkg remove os-UnboundBL-devel-0.2`
+`$ pkg remove os-UnboundBL-devel-1.0`
 
-#### Currently at version: ` devel-0.2`  on Aug. 30, 2018
+#### Currently at version: ` devel-1.0`  on March 12, 2019
 
-Special thanks to [Devin Ortner](https://devinstechblog.com/block-ads-with-dns-in-opnsense/) for his awesome blog post, which helped kickstart this project. And of course, the Unbound DNS & OPNsense team. You guys are 'da real MVPs.
+Special thanks to [Devin Ortner](https://devinstechblog.com/block-ads-with-dns-in-opnsense/) for his awesome blog post, which helped kickstart this project. OPNsense contributor @mimugmail for his awesome critique and help. And of course, the Unbound DNS & OPNsense team. You guys are 'da real MVPs.
