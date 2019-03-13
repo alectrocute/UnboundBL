@@ -14,7 +14,7 @@ are permitted provided that the following conditions are met:
     this list of conditions and the following disclaimer in the documentation
     and/or other materials provided with the distribution.
 
-THIS SOFTWARE IS PROVIDED â€œAS ISâ€ AND ANY EXPRESS OR IMPLIED WARRANTIES,
+THIS SOFTWARE IS PROVIDED AS IS AND ANY EXPRESS OR IMPLIED WARRANTIES,
 INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
 AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
 AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
@@ -37,7 +37,7 @@ POSSIBILITY OF SUCH DAMAGE.
       <div class="content-box">
          {{ partial("layout_partials/base_form",['fields':general,'id':'frm_general_settings'])}}
          <hr />
-         <button class="btn btn-primary btn-dnsbl" id="saveAct" type="button"><b>{{ lang._('Save & Rebuild') }}</b><i id="saveAct_progress"></i>
+         <button class="btn btn-primary btn-dnsbl" id="saveAct" type="button"><b>{{ lang._('Save') }}</b><i id="saveAct_progress"></i>
          </button>
       </div>
       <div id="console-dnsbl" class="col-12">
