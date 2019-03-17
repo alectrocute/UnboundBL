@@ -130,12 +130,10 @@ scripts-auto:
 		done; \
 	fi
 	@if [ -d ${.CURDIR}/src/opnsense/service/conf/actions.d ]; then \
-		mkdir -p ${TEMPLATESDIR}/actions.d; \
 		cat ${TEMPLATESDIR}/actions.d >> ${DESTDIR}/+POST_INSTALL; \
 	fi
 	@if [ -d ${.CURDIR}/src/etc/rc.loader.d ]; then \
 		for SCRIPT in +POST_INSTALL +POST_DEINSTALL; do \
-			mkdir -p ${TEMPLATESDIR}/rc.loader.d; \
 			cat ${TEMPLATESDIR}/rc.loader.d >> \
 			    ${DESTDIR}/$${SCRIPT}; \
 		done; \
@@ -143,13 +141,11 @@ scripts-auto:
 	@if [ -d ${.CURDIR}/src/opnsense/mvc/app/models ]; then \
 		for FILE in $$(cd ${.CURDIR}/src/opnsense/mvc/app/models && \
 		    find -s . -depth 2 -type d); do \
-		    mkdir -p ${TEMPLATESDIR}/models; \
 			cat ${TEMPLATESDIR}/models | \
 			    sed "s:%%ARG%%:$${FILE#./}:g" >> \
 			    ${DESTDIR}/+POST_INSTALL; \
 		done; \
 		for SCRIPT in +POST_INSTALL +POST_DEINSTALL; do \
-			mkdir -p ${TEMPLATESDIR}/configure; \
 			cat ${TEMPLATESDIR}/configure | \
 			    sed "s:%%ARG%%:$${SCRIPT#+}:g" >> \
 			    ${DESTDIR}/$${SCRIPT}; \
@@ -158,7 +154,6 @@ scripts-auto:
 	@if [ -d ${.CURDIR}/src/opnsense/service/templates ]; then \
 		for FILE in $$(cd ${.CURDIR}/src/opnsense/service/templates && \
 		    find -s . -depth 2 -type d); do \
-			mkdir -p ${TEMPLATESDIR}/templates; \
 			cat ${TEMPLATESDIR}/templates | \
 			    sed "s:%%ARG%%:$${FILE#./}:g" >> \
 			    ${DESTDIR}/+POST_INSTALL; \
