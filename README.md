@@ -1,4 +1,4 @@
-# UnboundBL 🛑
+# UnboundBL 🛑 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/alectrocute/UnboundBL/pulls)
 Block ads, malware, tracking, mining + more on OPNsense with UnboundBL & Unbound DNS.
 
 ![UnboundBL](https://i.imgur.com/zvKpPDk.png)
