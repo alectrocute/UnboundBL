@@ -36,7 +36,9 @@ PLUGIN_DESC=		pkg-descr
 PLUGIN_SCRIPTS=		+PRE_INSTALL +POST_INSTALL \
 			+PRE_DEINSTALL +POST_DEINSTALL
 
-PLUGINSDIR=		${.CURDIR}/../..
+#PLUGINSDIR=		${.CURDIR}/../..
+## This pluginsdir will work, no matter where the file is located.
+PLUGINSDIR=		/usr/plugins
 TEMPLATESDIR=		${PLUGINSDIR}/Templates
 
 PLUGIN_WWW?=		https://opnsense.org/
